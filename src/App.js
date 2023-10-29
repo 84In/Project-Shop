@@ -1,34 +1,32 @@
-import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment } from './redux/slides/CounterSlides'
-import styled from 'styled-components'
+import React, { Fragment } from 'react'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HeaderComponent from './components/HeaderComponent/HeaderComponent'
+import {routes} from './routes'
+import DefaultComponent from './components/DefaultComponent/DefaultComponent'
 
 function App() {
-  const count = useSelector((state) => state.counter.value)
-  const dispatch = useDispatch()
-
-  const Button = styled.button({
-    background: 'red',
-  });
 
   return (
-    <div>
-      <div>
-        <Button
-          aria-label="Increment value"
-          onClick={() => dispatch(increment())}
-        >
-          Increment
-        </Button>
-        <span>{count}</span>
-        <button
-          aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
-        >
-          Decrement
-        </button>
-      </div>
-    </div>
+   <div>
+    
+    <Router>
+      <Routes>
+        {routes.map((route) => {
+          const Page = route.page
+          const Layout = route.isShowHeader ? DefaultComponent : Fragment
+          return(
+            <Route key={route.path} path={route.path} element={
+            <Layout>
+            <Page/>
+            </Layout>
+          }/>
+          )
+        })}
+        
+      </Routes>
+    </Router>
+    
+   </div>
   )
 }
 export default App;
