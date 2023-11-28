@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng Ký</title>
+        <link rel="icon" type="image/x-icon" href="asset/images/SKY_logo.png">
+        <link rel="stylesheet" href="asset/css/login.css">
+        <link rel="stylesheet" href="asset/css/register.css">
+        <link rel="stylesheet" href="asset/css/base.css">
+        <!-- <link rel="stylesheet" href="asset/css/home.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    </head>
+    <body>
+        <header>
+            <!-- _____Logo_____ -->
+            <div class="logo" id="logo">
+                <a href="home.html">
+                    <img src="asset/images/SKY_logo.png" alt="LogoShop" width="80px">
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <a href="home.html">
+                    <span class="icon-close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <form action="login.html" onsubmit="return register()">
+                    <h1>Đăng Ký</h1>
+                    <div class="action-register">
+                        <div class="input-box">
+                            <input
+                                id="TextBoxName"
+                                type="text"
+                                placeholder="Nhập Họ Tên"
+                                required
+                            >
+                            <i class="fa fa-signature"></i>
+                        </div>
+                        <div class="input-box">
+                            <input
+                                id="TextBoxUser"
+                                type="text"
+                                placeholder="Nhập Username"
+                                required
+                            >
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <input
+                                id="TextBoxEmail"
+                                type="text"
+                                id=""
+                                placeholder="Nhập email"
+                            >
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="input-box">
+                            <input
+                                id="TextBoxPass1"
+                                type="password"
+                                placeholder="Nhập mật khẩu"
+                                required
+                            >
+                            <i id="icon_password1" class="fa fa-eye" onclick="show_hidden_password1()"></i>
+                        </div>
+                        <div class="input-box">
+                            <input
+                                id="TextBoxPass2"
+                                type="password"
+                                placeholder="Xác nhận mật khẩu"
+                                required
+                            >
+                            <i id="icon_password2" class="fa fa-eye" onclick="show_hidden_password2()"></i>
+                        </div>
+                        <div class="policy-register">
+                            <input id="CheckBox" type="checkbox" required>
+                            Tôi đồng ý với
+                            <a href="#">điều khoản</a>
+                        </div>
+                        <div>
+                            <button class="btn" type="submit">Đăng ký</button>
+                        </div>
+                        <div class="login-link">
+                            <p>
+                                Bạn đã có tài khoản?
+                                <a href="login.html">Đăng Nhập</a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- <script async src="./asset/js/home.js"></script> -->
+        <script src="./asset/js/login.js"></script>
+        <!-- <script async src="./asset/js/funct.js"></script> -->
+    </body>
+</html>

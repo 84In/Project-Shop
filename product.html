@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Material CND-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+        <!--Style Sheet-->
+        <link rel="icon" type="image/x-icon" href="asset/images/SKY_logo.png" />
+        <title>Sản Phẩm</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="asset/css/product.css" />
+        <link rel="stylesheet" href="asset/css/home.css" />
+        <link rel="stylesheet" href="asset/css/base.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="body-container">
+            <header>
+                <!-- _____Logo_____ -->
+                <div class="row header">
+                    <div class="col-lg-1 logo" id="logo">
+                        <a href="home.html">
+                            <img src="asset/images/SKY_logo.png" alt="LogoShop" width="80px" />
+                        </a>
+                    </div>
+                    <div class="col-lg-7 navbar">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                            <div class="container-fluid sidebar">
+                                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                                        <li class="nav-item item">
+                                            <a class="nav-link active" aria-current="page" href="home.html"
+                                                >Trang Chủ
+                                            </a>
+                                        </li>
+                                        <li class="nav-item item">
+                                            <a class="nav-link" href="product.html">Sản Phẩm</a>
+                                        </li>
+                                        <li class="nav-item item">
+                                            <a class="nav-link" href="contact.html">Liên Hệ</a>
+                                        </li>
+                                        <li class="nav-item item">
+                                            <a class="nav-link" href="blog.html">Tin Tức</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- <nav>
+                            <div class="sidebar">
+                                <ul class="menu">
+                                    <li class="item">
+                                        <a href="home.html">
+                                            <p>Trang Chủ</p>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="product.html">
+                                            <p>Sản Phẩm</p>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="contact.html">
+                                            <p>Liên Hệ</p>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="blog.html">
+                                            <p>Tin Tức</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav> -->
+                    </div>
+                    <div class="col-lg-4">
+                        <form action="" method="get" onsubmit="return checkKeyPress(this);">
+                            <div class="action">
+                                <div class="item search">
+                                    <div class="item search-btn">
+                                        <i class="fa-solid fa-search" onclick="sendSearchData();"></i>
+                                    </div>
+                                    <input
+                                        class="search-input"
+                                        type="text"
+                                        placeholder="Tìm kiếm ..."
+                                        onkeypress="checkKeyPress(event)"
+                                    />
+                                </div>
+                                <div class="user-info">
+                                    <button
+                                        class="navbar-toggler"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#navbarTogglerDemo02"
+                                        aria-controls="navbarTogglerDemo02"
+                                        aria-expanded="false"
+                                        aria-label="Toggle navigation"
+                                    >
+                                        <i class="fa-solid fa-bars"></i>
+                                    </button>
+                                    <div class="item user">
+                                        <a href="login.html">
+                                            <i class="fa-solid fa-user"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item user">
+                                        <a href="shoppingcart.html">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                    </div>
+                                    <!-- <div class="item user">
+                                        <a href="login.html">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </header>
+            <!-- _____Main_____ -->
+            <main>
+                <div class="main-container">
+                    <div class="showoff">
+                        <!-- <div class="swiper bannerSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/product/banner1.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/product/banner2.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/product/banner3.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/product/banner4.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/product/banner5.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/product/banner6.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/product/banner7.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/product/banner8.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./asset/images/product/banner9.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div> -->
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="./asset/images/product/banner1.jpg" />
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./asset/images/product/banner2.jpg" />
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./asset/images/product/banner3.jpg" />
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./asset/images/product/banner4.jpg" />
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./asset/images/product/banner5.jpg" />
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./asset/images/product/banner6.jpg" />
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./asset/images/product/banner7.jpg" />
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./asset/images/product/banner8.jpg" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./asset/images/product/banner9.jpg" />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleInterval"
+                                data-bs-slide="prev"
+                            >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleInterval"
+                                data-bs-slide="next"
+                            >
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="brands">
+                        <h1>THƯƠNG HIỆU</h1>
+                        <div class="brand-block">
+                            <div class="brand-item">
+                                <a href="#nike">
+                                    <img src="./asset/images/product/Brand/nike.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="brand-item">
+                                <a href="#adidas">
+                                    <img src="./asset/images/product/Brand/adidas.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="brand-item">
+                                <a href="#converse">
+                                    <img src="./asset/images/product/Brand/converse.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="brand-item">
+                                <a href="#new-balance">
+                                    <img src="./asset/images/product/Brand/new-balance.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="brand-item">
+                                <a href="#puma">
+                                    <img src="./asset/images/product/Brand/puma.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="brand-item">
+                                <a href="#vans">
+                                    <img src="./asset/images/product/Brand/vans.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- _____Nike_____ -->
+                    <div class="featuring">
+                        <h1>NIKE</h1>
+                        <div class="box-container" id="nike"></div>
+                    </div>
+                    <div class="featuring">
+                        <h1>ADIDAS</h1>
+                        <div class="box-container" id="adidas"></div>
+                    </div>
+                    <div class="featuring">
+                        <h1>CONVERSE</h1>
+                        <div class="box-container" id="converse"></div>
+                    </div>
+                    <div class="featuring">
+                        <h1>NEW BALANCE</h1>
+                        <div class="box-container" id="new-balance"></div>
+                    </div>
+                    <div class="featuring">
+                        <h1>PUMA</h1>
+                        <div class="box-container" id="puma"></div>
+                    </div>
+                    <div class="featuring">
+                        <h1>VANS</h1>
+                        <div class="box-container" id="vans"></div>
+                    </div>
+                </div>
+            </main>
+            <!-- _____Footer_____ -->
+            <footer>
+                <div class="footer-wrap">
+                    <div class="footer-info">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="asset/images/SKY_logo.png" alt="LogoShop" width="150px" />
+                            </a>
+                        </div>
+                        <div class="footer-member">
+                            <h3>Thành Viên</h3>
+                            <ul class="member">
+                                <li>
+                                    <a href="#">Phạm Minh Sáng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nguyễn Trung Tín</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nguyễn Thị Quỳnh Giao</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nguyễn Thị Mỹ Hạnh</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ông Thị Hoàng Quyên</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-policy">
+                            <h3>Hỗ trợ khách hàng</h3>
+                            <ul>
+                                <li class="paragraph">
+                                    <a href="#">Hỗ trợ tư vấn khách hàng</a>
+                                </li>
+                                <li class="paragraph">
+                                    <a href="#">Hướng dẫn mua hàng</a>
+                                </li>
+                                <li class="paragraph">
+                                    <a href="#">Chính sách đổi trả</a>
+                                </li>
+                                <li class="paragraph">
+                                    <a href="#">Chính sách bảo mật</a>
+                                </li>
+                                <li class="paragraph">
+                                    <a href="#">Chính sách thanh toán</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-contact">
+                            <h3>Liên hệ</h3>
+                            <div class="social">
+                                <div class="social_item">
+                                    <a href="https://twitter.com" class="fa-brands fa-twitter"></a>
+                                </div>
+                                <div class="social_item">
+                                    <a href="https://facebook.com" class="fa-brands fa-facebook"></a>
+                                </div>
+                                <div class="social_item">
+                                    <a href="https://instagram.com" class="fa-brands fa-instagram"></a>
+                                </div>
+                                <div class="social_item">
+                                    <a href="https://youtube.com" class="fa-brands fa-youtube"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy 2023 Sky Store</p>
+                    </div>
+                    <a href="#" id="Top" class="">
+                        <div class="gotoTop">
+                            <i class="fa-solid fa-angles-up"></i>
+                        </div>
+                    </a>
+                </div>
+            </footer>
+        </div>
+        <script src="asset/js/funct.js"></script>
+        <script>
+            const productListNike = [];
+            fetch('asset/file/nike.txt')
+                .then((response) => response.text())
+                .then((data) => {
+                    // Phân tách dữ liệu thành các dòng (mỗi dòng chứa một sản phẩm).
+                    const lines = data.split('\n');
+
+                    // Lặp qua từng dòng và tạo các đối tượng sản phẩm.
+                    lines.forEach((line) => {
+                        const [id, name, price, imageUrl1, imageUrl2, imageUrl3, imageUrl4, imageUrl5] =
+                            line.split(',');
+                        const product = {
+                            id: id,
+                            name: name,
+                            price: price,
+                            imageUrl1: imageUrl1,
+                            imageUrl2: imageUrl2,
+                            imageUrl3: imageUrl3,
+                            imageUrl4: imageUrl4,
+                            imageUrl5: imageUrl5,
+                        };
+                        productListNike.push(product);
+                    });
+                    productListNike.forEach((element) => {
+                        //Xu li hinh anh
+                        var imgProduct1 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct1.src = element.imageUrl1;
+                        imgProduct1.setAttribute('id', `img${element.id}`);
+
+                        var divsss1 = document.createElement('div');
+                        divsss1.classList.add('swiper-slide', 'shoe');
+                        divsss1.appendChild(imgProduct1);
+
+                        var imgProduct2 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct2.src = element.imageUrl2;
+
+                        var divsss2 = document.createElement('div');
+                        divsss2.classList.add('swiper-slide', 'shoe');
+                        divsss2.appendChild(imgProduct2);
+
+                        var imgProduct3 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct3.src = element.imageUrl3;
+
+                        var divsss3 = document.createElement('div');
+                        divsss3.classList.add('swiper-slide', 'shoe');
+                        divsss3.appendChild(imgProduct3);
+
+                        var imgProduct4 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct4.src = element.imageUrl4;
+
+                        var divsss4 = document.createElement('div');
+                        divsss4.classList.add('swiper-slide', 'shoe');
+                        divsss4.appendChild(imgProduct4);
+
+                        var imgProduct5 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct5.src = element.imageUrl5;
+
+                        var divsss5 = document.createElement('div');
+                        divsss5.classList.add('swiper-slide', 'shoe');
+                        divsss5.appendChild(imgProduct5);
+
+                        var divImg = document.createElement('div');
+                        divImg.classList.add('swiper-wrapper', 'wrapper');
+                        divImg.appendChild(divsss1);
+                        divImg.appendChild(divsss2);
+                        divImg.appendChild(divsss3);
+                        divImg.appendChild(divsss4);
+                        divImg.appendChild(divsss5);
+
+                        var divSS = document.createElement('div');
+                        divSS.classList.add('swiper-scrollbar');
+
+                        var divSI = document.createElement('div');
+                        divSI.classList.add('swiper', 'imgSwiper');
+                        divSI.appendChild(divImg);
+                        divSI.appendChild(divSS);
+
+                        var divR1 = document.createElement('div'); // 1
+                        divR1.appendChild(divSI);
+                        //Xu li ten san pham
+                        var h3Name = document.createElement('h3'); //2
+                        h3Name.textContent = element.name;
+                        h3Name.id = `name${element.id}`;
+
+                        //Xu ly gia tien
+                        var number1 = parseInt(element.price);
+                        var divPrice = document.createElement('div'); //3
+                        divPrice.classList.add('price');
+                        divPrice.setAttribute('id', `price${element.id}`);
+                        divPrice.innerHTML = `${number1.format()}<sup>đ</sup>`;
+
+                        //Xu li id va mau
+                        var pID = document.createElement('p');
+                        pID.innerHTML = `Mã: ${element.id}`;
+
+                        var divMau = document.createElement('div');
+                        divMau.classList.add('color');
+                        divMau.innerHTML = `<p>Màu:</p>
+                        <div>
+                            <div class="color-item white"></div>
+                        </div>
+                        `;
+
+                        var divShoeIn4 = document.createElement('div'); //4
+                        divShoeIn4.classList.add('shoe-info');
+                        divShoeIn4.appendChild(pID);
+                        divShoeIn4.appendChild(divMau);
+
+                        //Xu ly danh gia
+                        var divRate = document.createElement('div'); //5
+                        divRate.classList.add('rate-icon');
+                        divRate.innerHTML = `<div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <i class="fa-solid fa-heart"></i>
+                        `;
+
+                        var h4S = document.createElement('h4');
+
+                        h4S.textContent = 'Số lượng';
+
+                        var inputSL = document.createElement('input');
+                        inputSL.setAttribute('id', `soluong${element.id}`);
+                        inputSL.setAttribute('type', 'number');
+                        inputSL.setAttribute('min', 1);
+                        inputSL.setAttribute('max', 50);
+                        inputSL.setAttribute('size', 2);
+                        inputSL.setAttribute('value', 0);
+
+                        var divH4Ip = document.createElement('div');
+                        divH4Ip.appendChild(h4S);
+                        divH4Ip.appendChild(inputSL);
+
+                        var divH4Select = document.createElement('div');
+                        divH4Select.innerHTML = `<h4>Size</h4>
+                        <select id="size${element.id}">
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                        </select>`;
+
+                        var divInputCart = document.createElement('div'); //6
+                        divInputCart.classList.add('input-cart');
+                        divInputCart.appendChild(divH4Ip);
+                        divInputCart.appendChild(divH4Select);
+
+                        var btnDH = document.createElement('button'); //7
+                        btnDH.classList.add('btn');
+                        btnDH.setAttribute('onclick', `addcart('${element.id}')`);
+                        btnDH.innerHTML = ` <i class="fa-solid fa-shopping-cart"></i>`;
+
+                        var divBox = document.createElement('div');
+                        divBox.classList.add('box');
+                        divBox.appendChild(divR1);
+                        divBox.appendChild(h3Name);
+                        divBox.appendChild(divPrice);
+                        divBox.appendChild(divShoeIn4);
+                        divBox.appendChild(divRate);
+                        divBox.appendChild(divInputCart);
+                        divBox.appendChild(btnDH);
+
+                        var showcontent = document.getElementById('nike');
+                        // showcontent.appendChild(divBox);
+                        if (showcontent) {
+                            showcontent.appendChild(divBox); // Thêm dòng dữ liệu vào tbody nếu tồn tại
+                        } else {
+                            console.error('Không tìm thấy phần tử tbody trong DOM.');
+                        }
+                        console.log(element);
+                    });
+                });
+            const productListAdidas = [];
+
+            fetch('asset/file/adidas.txt')
+                .then((response) => response.text())
+                .then((data) => {
+                    // Phân tách dữ liệu thành các dòng (mỗi dòng chứa một sản phẩm).
+                    const lines = data.split('\n');
+
+                    // Lặp qua từng dòng và tạo các đối tượng sản phẩm.
+                    lines.forEach((line) => {
+                        const [id, name, price, imageUrl1, imageUrl2, imageUrl3, imageUrl4, imageUrl5] =
+                            line.split(',');
+                        const product = {
+                            id: id,
+                            name: name,
+                            price: price,
+                            imageUrl1: imageUrl1,
+                            imageUrl2: imageUrl2,
+                            imageUrl3: imageUrl3,
+                            imageUrl4: imageUrl4,
+                            imageUrl5: imageUrl5,
+                        };
+                        productListAdidas.push(product);
+                    });
+                    productListAdidas.forEach((element) => {
+                        //Xu li hinh anh
+                        var imgProduct1 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct1.src = element.imageUrl1;
+                        imgProduct1.setAttribute('id', `img${element.id}`);
+
+                        var divsss1 = document.createElement('div');
+                        divsss1.classList.add('swiper-slide', 'shoe');
+                        divsss1.appendChild(imgProduct1);
+
+                        var imgProduct2 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct2.src = element.imageUrl2;
+
+                        var divsss2 = document.createElement('div');
+                        divsss2.classList.add('swiper-slide', 'shoe');
+                        divsss2.appendChild(imgProduct2);
+
+                        var imgProduct3 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct3.src = element.imageUrl3;
+
+                        var divsss3 = document.createElement('div');
+                        divsss3.classList.add('swiper-slide', 'shoe');
+                        divsss3.appendChild(imgProduct3);
+
+                        var imgProduct4 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct4.src = element.imageUrl4;
+
+                        var divsss4 = document.createElement('div');
+                        divsss4.classList.add('swiper-slide', 'shoe');
+                        divsss4.appendChild(imgProduct4);
+
+                        var imgProduct5 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct5.src = element.imageUrl5;
+
+                        var divsss5 = document.createElement('div');
+                        divsss5.classList.add('swiper-slide', 'shoe');
+                        divsss5.appendChild(imgProduct5);
+
+                        var divImg = document.createElement('div');
+                        divImg.classList.add('swiper-wrapper', 'wrapper');
+                        divImg.appendChild(divsss1);
+                        divImg.appendChild(divsss2);
+                        divImg.appendChild(divsss3);
+                        divImg.appendChild(divsss4);
+                        divImg.appendChild(divsss5);
+
+                        var divSS = document.createElement('div');
+                        divSS.classList.add('swiper-scrollbar');
+
+                        var divSI = document.createElement('div');
+                        divSI.classList.add('swiper', 'imgSwiper');
+                        divSI.appendChild(divImg);
+                        divSI.appendChild(divSS);
+
+                        var divR1 = document.createElement('div'); // 1
+                        divR1.appendChild(divSI);
+                        //Xu li ten san pham
+                        var h3Name = document.createElement('h3'); //2
+                        h3Name.textContent = element.name;
+                        h3Name.id = `name${element.id}`;
+
+                        //Xu ly gia tien
+                        var number1 = parseInt(element.price);
+                        var divPrice = document.createElement('div'); //3
+                        divPrice.classList.add('price');
+                        divPrice.setAttribute('id', `price${element.id}`);
+                        divPrice.innerHTML = `${number1.format()}<sup>đ</sup>`;
+
+                        //Xu li id va mau
+                        var pID = document.createElement('p');
+                        pID.innerHTML = `Mã: ${element.id}`;
+
+                        var divMau = document.createElement('div');
+                        divMau.classList.add('color');
+                        divMau.innerHTML = `<p>Màu:</p>
+                        <div>
+                            <div class="color-item white"></div>
+                        </div>
+                        `;
+
+                        var divShoeIn4 = document.createElement('div'); //4
+                        divShoeIn4.classList.add('shoe-info');
+                        divShoeIn4.appendChild(pID);
+                        divShoeIn4.appendChild(divMau);
+
+                        //Xu ly danh gia
+                        var divRate = document.createElement('div'); //5
+                        divRate.classList.add('rate-icon');
+                        divRate.innerHTML = `<div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <i class="fa-solid fa-heart"></i>
+                        `;
+
+                        var h4S = document.createElement('h4');
+
+                        h4S.textContent = 'Số lượng';
+
+                        var inputSL = document.createElement('input');
+                        inputSL.setAttribute('id', `soluong${element.id}`);
+                        inputSL.setAttribute('type', 'number');
+                        inputSL.setAttribute('min', 1);
+                        inputSL.setAttribute('max', 50);
+                        inputSL.setAttribute('size', 2);
+                        inputSL.setAttribute('value', 0);
+
+                        var divH4Ip = document.createElement('div');
+                        divH4Ip.appendChild(h4S);
+                        divH4Ip.appendChild(inputSL);
+
+                        var divH4Select = document.createElement('div');
+                        divH4Select.innerHTML = `<h4>Size</h4>
+                        <select id="size${element.id}">
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                        </select>`;
+
+                        var divInputCart = document.createElement('div'); //6
+                        divInputCart.classList.add('input-cart');
+                        divInputCart.appendChild(divH4Ip);
+                        divInputCart.appendChild(divH4Select);
+
+                        var btnDH = document.createElement('button'); //7
+                        btnDH.classList.add('btn');
+                        btnDH.setAttribute('onclick', `addcart('${element.id}')`);
+                        btnDH.innerHTML = ` <i class="fa-solid fa-shopping-cart"></i>`;
+
+                        var divBox = document.createElement('div');
+                        divBox.classList.add('box');
+                        divBox.appendChild(divR1);
+                        divBox.appendChild(h3Name);
+                        divBox.appendChild(divPrice);
+                        divBox.appendChild(divShoeIn4);
+                        divBox.appendChild(divRate);
+                        divBox.appendChild(divInputCart);
+                        divBox.appendChild(btnDH);
+
+                        var showcontent = document.getElementById('adidas');
+                        // showcontent.appendChild(divBox);
+                        if (showcontent) {
+                            showcontent.appendChild(divBox); // Thêm dòng dữ liệu vào tbody nếu tồn tại
+                        } else {
+                            console.error('Không tìm thấy phần tử tbody trong DOM.');
+                        }
+                        console.log(element);
+                    });
+                });
+            const productListconverse = [];
+
+            fetch('asset/file/converse.txt')
+                .then((response) => response.text())
+                .then((data) => {
+                    // Phân tách dữ liệu thành các dòng (mỗi dòng chứa một sản phẩm).
+                    const lines = data.split('\n');
+
+                    // Lặp qua từng dòng và tạo các đối tượng sản phẩm.
+                    lines.forEach((line) => {
+                        const [id, name, price, imageUrl1, imageUrl2, imageUrl3] = line.split(',');
+                        const product = {
+                            id: id,
+                            name: name,
+                            price: price,
+                            imageUrl1: imageUrl1,
+                            imageUrl2: imageUrl2,
+                            imageUrl3: imageUrl3,
+                        };
+                        productListconverse.push(product);
+                    });
+                    productListconverse.forEach((element) => {
+                        //Xu li hinh anh
+                        var imgProduct1 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct1.src = element.imageUrl1;
+                        imgProduct1.setAttribute('id', `img${element.id}`);
+
+                        var divsss1 = document.createElement('div');
+                        divsss1.classList.add('swiper-slide', 'shoe');
+                        divsss1.appendChild(imgProduct1);
+
+                        var imgProduct2 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct2.src = element.imageUrl2;
+
+                        var divsss2 = document.createElement('div');
+                        divsss2.classList.add('swiper-slide', 'shoe');
+                        divsss2.appendChild(imgProduct2);
+
+                        var imgProduct3 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct3.src = element.imageUrl3;
+
+                        var divsss3 = document.createElement('div');
+                        divsss3.classList.add('swiper-slide', 'shoe');
+                        divsss3.appendChild(imgProduct3);
+
+                        var imgProduct4 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct4.src = element.imageUrl4;
+
+                        var divsss4 = document.createElement('div');
+                        divsss4.classList.add('swiper-slide', 'shoe');
+                        divsss4.appendChild(imgProduct4);
+
+                        var imgProduct5 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct5.src = element.imageUrl5;
+
+                        var divsss5 = document.createElement('div');
+                        divsss5.classList.add('swiper-slide', 'shoe');
+                        divsss5.appendChild(imgProduct5);
+
+                        var divImg = document.createElement('div');
+                        divImg.classList.add('swiper-wrapper', 'wrapper');
+                        divImg.appendChild(divsss1);
+                        divImg.appendChild(divsss2);
+                        divImg.appendChild(divsss3);
+                        divImg.appendChild(divsss4);
+                        divImg.appendChild(divsss5);
+
+                        var divSS = document.createElement('div');
+                        divSS.classList.add('swiper-scrollbar');
+
+                        var divSI = document.createElement('div');
+                        divSI.classList.add('swiper', 'imgSwiper');
+                        divSI.appendChild(divImg);
+                        divSI.appendChild(divSS);
+
+                        var divR1 = document.createElement('div'); // 1
+                        divR1.appendChild(divSI);
+                        //Xu li ten san pham
+                        var h3Name = document.createElement('h3'); //2
+                        h3Name.textContent = element.name;
+                        h3Name.id = `name${element.id}`;
+
+                        //Xu ly gia tien
+                        var number1 = parseInt(element.price);
+                        var divPrice = document.createElement('div'); //3
+                        divPrice.classList.add('price');
+                        divPrice.setAttribute('id', `price${element.id}`);
+                        divPrice.innerHTML = `${number1.format()}<sup>đ</sup>`;
+
+                        //Xu li id va mau
+                        var pID = document.createElement('p');
+                        pID.innerHTML = `Mã: ${element.id}`;
+
+                        var divMau = document.createElement('div');
+                        divMau.classList.add('color');
+                        divMau.innerHTML = `<p>Màu:</p>
+                        <div>
+                            <div class="color-item white"></div>
+                        </div>
+                        `;
+
+                        var divShoeIn4 = document.createElement('div'); //4
+                        divShoeIn4.classList.add('shoe-info');
+                        divShoeIn4.appendChild(pID);
+                        divShoeIn4.appendChild(divMau);
+
+                        //Xu ly danh gia
+                        var divRate = document.createElement('div'); //5
+                        divRate.classList.add('rate-icon');
+                        divRate.innerHTML = `<div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <i class="fa-solid fa-heart"></i>
+                        `;
+
+                        var h4S = document.createElement('h4');
+
+                        h4S.textContent = 'Số lượng';
+
+                        var inputSL = document.createElement('input');
+                        inputSL.setAttribute('id', `soluong${element.id}`);
+                        inputSL.setAttribute('type', 'number');
+                        inputSL.setAttribute('min', 1);
+                        inputSL.setAttribute('max', 50);
+                        inputSL.setAttribute('size', 2);
+                        inputSL.setAttribute('value', 0);
+
+                        var divH4Ip = document.createElement('div');
+                        divH4Ip.appendChild(h4S);
+                        divH4Ip.appendChild(inputSL);
+
+                        var divH4Select = document.createElement('div');
+                        divH4Select.innerHTML = `<h4>Size</h4>
+                        <select id="size${element.id}">
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                        </select>`;
+
+                        var divInputCart = document.createElement('div'); //6
+                        divInputCart.classList.add('input-cart');
+                        divInputCart.appendChild(divH4Ip);
+                        divInputCart.appendChild(divH4Select);
+
+                        var btnDH = document.createElement('button'); //7
+                        btnDH.classList.add('btn');
+                        btnDH.setAttribute('onclick', `addcart('${element.id}')`);
+                        btnDH.innerHTML = ` <i class="fa-solid fa-shopping-cart"></i>`;
+
+                        var divBox = document.createElement('div');
+                        divBox.classList.add('box');
+                        divBox.appendChild(divR1);
+                        divBox.appendChild(h3Name);
+                        divBox.appendChild(divPrice);
+                        divBox.appendChild(divShoeIn4);
+                        divBox.appendChild(divRate);
+                        divBox.appendChild(divInputCart);
+                        divBox.appendChild(btnDH);
+
+                        var showcontent = document.getElementById('converse');
+                        // showcontent.appendChild(divBox);
+                        if (showcontent) {
+                            showcontent.appendChild(divBox); // Thêm dòng dữ liệu vào tbody nếu tồn tại
+                        } else {
+                            console.error('Không tìm thấy phần tử tbody trong DOM.');
+                        }
+                        console.log(element);
+                    });
+                });
+            const productListnewbalance = [];
+
+            fetch('asset/file/newbalance.txt')
+                .then((response) => response.text())
+                .then((data) => {
+                    // Phân tách dữ liệu thành các dòng (mỗi dòng chứa một sản phẩm).
+                    const lines = data.split('\n');
+
+                    // Lặp qua từng dòng và tạo các đối tượng sản phẩm.
+                    lines.forEach((line) => {
+                        const [id, name, price, imageUrl1, imageUrl2, imageUrl3] = line.split(',');
+                        const product = {
+                            id: id,
+                            name: name,
+                            price: price,
+                            imageUrl1: imageUrl1,
+                            imageUrl2: imageUrl2,
+                            imageUrl3: imageUrl3,
+                        };
+                        productListnewbalance.push(product);
+                    });
+                    productListnewbalance.forEach((element) => {
+                        //Xu li hinh anh
+                        var imgProduct1 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct1.src = element.imageUrl1;
+                        imgProduct1.setAttribute('id', `img${element.id}`);
+
+                        var divsss1 = document.createElement('div');
+                        divsss1.classList.add('swiper-slide', 'shoe');
+                        divsss1.appendChild(imgProduct1);
+
+                        var imgProduct2 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct2.src = element.imageUrl2;
+
+                        var divsss2 = document.createElement('div');
+                        divsss2.classList.add('swiper-slide', 'shoe');
+                        divsss2.appendChild(imgProduct2);
+
+                        var imgProduct3 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct3.src = element.imageUrl3;
+
+                        var divsss3 = document.createElement('div');
+                        divsss3.classList.add('swiper-slide', 'shoe');
+                        divsss3.appendChild(imgProduct3);
+
+                        var imgProduct4 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct4.src = element.imageUrl4;
+
+                        var divsss4 = document.createElement('div');
+                        divsss4.classList.add('swiper-slide', 'shoe');
+                        divsss4.appendChild(imgProduct4);
+
+                        var imgProduct5 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct5.src = element.imageUrl5;
+
+                        var divsss5 = document.createElement('div');
+                        divsss5.classList.add('swiper-slide', 'shoe');
+                        divsss5.appendChild(imgProduct5);
+
+                        var divImg = document.createElement('div');
+                        divImg.classList.add('swiper-wrapper', 'wrapper');
+                        divImg.appendChild(divsss1);
+                        divImg.appendChild(divsss2);
+                        divImg.appendChild(divsss3);
+                        divImg.appendChild(divsss4);
+                        divImg.appendChild(divsss5);
+
+                        var divSS = document.createElement('div');
+                        divSS.classList.add('swiper-scrollbar');
+
+                        var divSI = document.createElement('div');
+                        divSI.classList.add('swiper', 'imgSwiper');
+                        divSI.appendChild(divImg);
+                        divSI.appendChild(divSS);
+
+                        var divR1 = document.createElement('div'); // 1
+                        divR1.appendChild(divSI);
+                        //Xu li ten san pham
+                        var h3Name = document.createElement('h3'); //2
+                        h3Name.textContent = element.name;
+                        h3Name.id = `name${element.id}`;
+
+                        //Xu ly gia tien
+                        var number1 = parseInt(element.price);
+                        var divPrice = document.createElement('div'); //3
+                        divPrice.classList.add('price');
+                        divPrice.setAttribute('id', `price${element.id}`);
+                        divPrice.innerHTML = `${number1.format()}<sup>đ</sup>`;
+
+                        //Xu li id va mau
+                        var pID = document.createElement('p');
+                        pID.innerHTML = `Mã: ${element.id}`;
+
+                        var divMau = document.createElement('div');
+                        divMau.classList.add('color');
+                        divMau.innerHTML = `<p>Màu:</p>
+                        <div>
+                            <div class="color-item white"></div>
+                        </div>
+                        `;
+
+                        var divShoeIn4 = document.createElement('div'); //4
+                        divShoeIn4.classList.add('shoe-info');
+                        divShoeIn4.appendChild(pID);
+                        divShoeIn4.appendChild(divMau);
+
+                        //Xu ly danh gia
+                        var divRate = document.createElement('div'); //5
+                        divRate.classList.add('rate-icon');
+                        divRate.innerHTML = `<div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <i class="fa-solid fa-heart"></i>
+                        `;
+
+                        var h4S = document.createElement('h4');
+
+                        h4S.textContent = 'Số lượng';
+
+                        var inputSL = document.createElement('input');
+                        inputSL.setAttribute('id', `soluong${element.id}`);
+                        inputSL.setAttribute('type', 'number');
+                        inputSL.setAttribute('min', 1);
+                        inputSL.setAttribute('max', 50);
+                        inputSL.setAttribute('size', 2);
+                        inputSL.setAttribute('value', 0);
+
+                        var divH4Ip = document.createElement('div');
+                        divH4Ip.appendChild(h4S);
+                        divH4Ip.appendChild(inputSL);
+
+                        var divH4Select = document.createElement('div');
+                        divH4Select.innerHTML = `<h4>Size</h4>
+                        <select id="size${element.id}">
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                        </select>`;
+
+                        var divInputCart = document.createElement('div'); //6
+                        divInputCart.classList.add('input-cart');
+                        divInputCart.appendChild(divH4Ip);
+                        divInputCart.appendChild(divH4Select);
+
+                        var btnDH = document.createElement('button'); //7
+                        btnDH.classList.add('btn');
+                        btnDH.setAttribute('onclick', `addcart('${element.id}')`);
+                        btnDH.innerHTML = ` <i class="fa-solid fa-shopping-cart"></i>`;
+
+                        var divBox = document.createElement('div');
+                        divBox.classList.add('box');
+                        divBox.appendChild(divR1);
+                        divBox.appendChild(h3Name);
+                        divBox.appendChild(divPrice);
+                        divBox.appendChild(divShoeIn4);
+                        divBox.appendChild(divRate);
+                        divBox.appendChild(divInputCart);
+                        divBox.appendChild(btnDH);
+
+                        var showcontent = document.getElementById('new-balance');
+                        // showcontent.appendChild(divBox);
+                        if (showcontent) {
+                            showcontent.appendChild(divBox); // Thêm dòng dữ liệu vào tbody nếu tồn tại
+                        } else {
+                            console.error('Không tìm thấy phần tử tbody trong DOM.');
+                        }
+                        console.log(element);
+                    });
+                });
+            const productListpuma = [];
+
+            fetch('asset/file/puma.txt')
+                .then((response) => response.text())
+                .then((data) => {
+                    // Phân tách dữ liệu thành các dòng (mỗi dòng chứa một sản phẩm).
+                    const lines = data.split('\n');
+
+                    // Lặp qua từng dòng và tạo các đối tượng sản phẩm.
+                    lines.forEach((line) => {
+                        const [id, name, price, imageUrl1, imageUrl2, imageUrl3] = line.split(',');
+                        const product = {
+                            id: id,
+                            name: name,
+                            price: price,
+                            imageUrl1: imageUrl1,
+                            imageUrl2: imageUrl2,
+                            imageUrl3: imageUrl3,
+                        };
+                        productListpuma.push(product);
+                    });
+                    productListpuma.forEach((element) => {
+                        //Xu li hinh anh
+                        var imgProduct1 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct1.src = element.imageUrl1;
+                        imgProduct1.setAttribute('id', `img${element.id}`);
+
+                        var divsss1 = document.createElement('div');
+                        divsss1.classList.add('swiper-slide', 'shoe');
+                        divsss1.appendChild(imgProduct1);
+
+                        var imgProduct2 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct2.src = element.imageUrl2;
+
+                        var divsss2 = document.createElement('div');
+                        divsss2.classList.add('swiper-slide', 'shoe');
+                        divsss2.appendChild(imgProduct2);
+
+                        var imgProduct3 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct3.src = element.imageUrl3;
+
+                        var divsss3 = document.createElement('div');
+                        divsss3.classList.add('swiper-slide', 'shoe');
+                        divsss3.appendChild(imgProduct3);
+
+                        var imgProduct4 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct4.src = element.imageUrl4;
+
+                        var divsss4 = document.createElement('div');
+                        divsss4.classList.add('swiper-slide', 'shoe');
+                        divsss4.appendChild(imgProduct4);
+
+                        var imgProduct5 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct5.src = element.imageUrl5;
+
+                        var divsss5 = document.createElement('div');
+                        divsss5.classList.add('swiper-slide', 'shoe');
+                        divsss5.appendChild(imgProduct5);
+
+                        var divImg = document.createElement('div');
+                        divImg.classList.add('swiper-wrapper', 'wrapper');
+                        divImg.appendChild(divsss1);
+                        divImg.appendChild(divsss2);
+                        divImg.appendChild(divsss3);
+                        divImg.appendChild(divsss4);
+                        divImg.appendChild(divsss5);
+
+                        var divSS = document.createElement('div');
+                        divSS.classList.add('swiper-scrollbar');
+
+                        var divSI = document.createElement('div');
+                        divSI.classList.add('swiper', 'imgSwiper');
+                        divSI.appendChild(divImg);
+                        divSI.appendChild(divSS);
+
+                        var divR1 = document.createElement('div'); // 1
+                        divR1.appendChild(divSI);
+                        //Xu li ten san pham
+                        var h3Name = document.createElement('h3'); //2
+                        h3Name.textContent = element.name;
+                        h3Name.id = `name${element.id}`;
+
+                        //Xu ly gia tien
+                        var number1 = parseInt(element.price);
+                        var divPrice = document.createElement('div'); //3
+                        divPrice.classList.add('price');
+                        divPrice.setAttribute('id', `price${element.id}`);
+                        divPrice.innerHTML = `${number1.format()}<sup>đ</sup>`;
+
+                        //Xu li id va mau
+                        var pID = document.createElement('p');
+                        pID.innerHTML = `Mã: ${element.id}`;
+
+                        var divMau = document.createElement('div');
+                        divMau.classList.add('color');
+                        divMau.innerHTML = `<p>Màu:</p>
+                        <div>
+                            <div class="color-item white"></div>
+                        </div>
+                        `;
+
+                        var divShoeIn4 = document.createElement('div'); //4
+                        divShoeIn4.classList.add('shoe-info');
+                        divShoeIn4.appendChild(pID);
+                        divShoeIn4.appendChild(divMau);
+
+                        //Xu ly danh gia
+                        var divRate = document.createElement('div'); //5
+                        divRate.classList.add('rate-icon');
+                        divRate.innerHTML = `<div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <i class="fa-solid fa-heart"></i>
+                        `;
+
+                        var h4S = document.createElement('h4');
+
+                        h4S.textContent = 'Số lượng';
+
+                        var inputSL = document.createElement('input');
+                        inputSL.setAttribute('id', `soluong${element.id}`);
+                        inputSL.setAttribute('type', 'number');
+                        inputSL.setAttribute('min', 1);
+                        inputSL.setAttribute('max', 50);
+                        inputSL.setAttribute('size', 2);
+                        inputSL.setAttribute('value', 0);
+
+                        var divH4Ip = document.createElement('div');
+                        divH4Ip.appendChild(h4S);
+                        divH4Ip.appendChild(inputSL);
+
+                        var divH4Select = document.createElement('div');
+                        divH4Select.innerHTML = `<h4>Size</h4>
+                        <select id="size${element.id}">
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                        </select>`;
+
+                        var divInputCart = document.createElement('div'); //6
+                        divInputCart.classList.add('input-cart');
+                        divInputCart.appendChild(divH4Ip);
+                        divInputCart.appendChild(divH4Select);
+
+                        var btnDH = document.createElement('button'); //7
+                        btnDH.classList.add('btn');
+                        btnDH.setAttribute('onclick', `addcart('${element.id}')`);
+                        btnDH.innerHTML = ` <i class="fa-solid fa-shopping-cart"></i>`;
+
+                        var divBox = document.createElement('div');
+                        divBox.classList.add('box');
+                        divBox.appendChild(divR1);
+                        divBox.appendChild(h3Name);
+                        divBox.appendChild(divPrice);
+                        divBox.appendChild(divShoeIn4);
+                        divBox.appendChild(divRate);
+                        divBox.appendChild(divInputCart);
+                        divBox.appendChild(btnDH);
+
+                        var showcontent = document.getElementById('puma');
+                        // showcontent.appendChild(divBox);
+                        if (showcontent) {
+                            showcontent.appendChild(divBox); // Thêm dòng dữ liệu vào tbody nếu tồn tại
+                        } else {
+                            console.error('Không tìm thấy phần tử tbody trong DOM.');
+                        }
+                        console.log(element);
+                    });
+                });
+            const productListvans = [];
+
+            fetch('asset/file/vans.txt')
+                .then((response) => response.text())
+                .then((data) => {
+                    // Phân tách dữ liệu thành các dòng (mỗi dòng chứa một sản phẩm).
+                    const lines = data.split('\n');
+
+                    // Lặp qua từng dòng và tạo các đối tượng sản phẩm.
+                    lines.forEach((line) => {
+                        const [id, name, price, imageUrl1, imageUrl2, imageUrl3] = line.split(',');
+                        const product = {
+                            id: id,
+                            name: name,
+                            price: price,
+                            imageUrl1: imageUrl1,
+                            imageUrl2: imageUrl2,
+                            imageUrl3: imageUrl3,
+                        };
+                        productListvans.push(product);
+                    });
+                    productListvans.forEach((element) => {
+                        //Xu li hinh anh
+                        var imgProduct1 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct1.src = element.imageUrl1;
+                        imgProduct1.setAttribute('id', `img${element.id}`);
+
+                        var divsss1 = document.createElement('div');
+                        divsss1.classList.add('swiper-slide', 'shoe');
+                        divsss1.appendChild(imgProduct1);
+
+                        var imgProduct2 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct2.src = element.imageUrl2;
+
+                        var divsss2 = document.createElement('div');
+                        divsss2.classList.add('swiper-slide', 'shoe');
+                        divsss2.appendChild(imgProduct2);
+
+                        var imgProduct3 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct3.src = element.imageUrl3;
+
+                        var divsss3 = document.createElement('div');
+                        divsss3.classList.add('swiper-slide', 'shoe');
+                        divsss3.appendChild(imgProduct3);
+
+                        var imgProduct4 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct4.src = element.imageUrl4;
+
+                        var divsss4 = document.createElement('div');
+                        divsss4.classList.add('swiper-slide', 'shoe');
+                        divsss4.appendChild(imgProduct4);
+
+                        var imgProduct5 = document.createElement('img');
+                        // imgProduct.classList.add('swiper-slide', 'shoe');
+                        imgProduct5.src = element.imageUrl5;
+
+                        var divsss5 = document.createElement('div');
+                        divsss5.classList.add('swiper-slide', 'shoe');
+                        divsss5.appendChild(imgProduct5);
+
+                        var divImg = document.createElement('div');
+                        divImg.classList.add('swiper-wrapper', 'wrapper');
+                        divImg.appendChild(divsss1);
+                        divImg.appendChild(divsss2);
+                        divImg.appendChild(divsss3);
+                        divImg.appendChild(divsss4);
+                        divImg.appendChild(divsss5);
+
+                        var divSS = document.createElement('div');
+                        divSS.classList.add('swiper-scrollbar');
+
+                        var divSI = document.createElement('div');
+                        divSI.classList.add('swiper', 'imgSwiper');
+                        divSI.appendChild(divImg);
+                        divSI.appendChild(divSS);
+
+                        var divR1 = document.createElement('div'); // 1
+                        divR1.appendChild(divSI);
+                        //Xu li ten san pham
+                        var h3Name = document.createElement('h3'); //2
+                        h3Name.textContent = element.name;
+                        h3Name.id = `name${element.id}`;
+
+                        //Xu ly gia tien
+                        var number1 = parseInt(element.price);
+                        var divPrice = document.createElement('div'); //3
+                        divPrice.classList.add('price');
+                        divPrice.setAttribute('id', `price${element.id}`);
+                        divPrice.innerHTML = `${number1.format()}<sup>đ</sup>`;
+
+                        //Xu li id va mau
+                        var pID = document.createElement('p');
+                        pID.innerHTML = `Mã: ${element.id}`;
+
+                        var divMau = document.createElement('div');
+                        divMau.classList.add('color');
+                        divMau.innerHTML = `<p>Màu:</p>
+                        <div>
+                            <div class="color-item white"></div>
+                        </div>
+                        `;
+
+                        var divShoeIn4 = document.createElement('div'); //4
+                        divShoeIn4.classList.add('shoe-info');
+                        divShoeIn4.appendChild(pID);
+                        divShoeIn4.appendChild(divMau);
+
+                        //Xu ly danh gia
+                        var divRate = document.createElement('div'); //5
+                        divRate.classList.add('rate-icon');
+                        divRate.innerHTML = `<div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <i class="fa-solid fa-heart"></i>
+                        `;
+
+                        var h4S = document.createElement('h4');
+
+                        h4S.textContent = 'Số lượng';
+
+                        var inputSL = document.createElement('input');
+                        inputSL.setAttribute('id', `soluong${element.id}`);
+                        inputSL.setAttribute('type', 'number');
+                        inputSL.setAttribute('min', 1);
+                        inputSL.setAttribute('max', 50);
+                        inputSL.setAttribute('size', 2);
+                        inputSL.setAttribute('value', 0);
+
+                        var divH4Ip = document.createElement('div');
+                        divH4Ip.appendChild(h4S);
+                        divH4Ip.appendChild(inputSL);
+
+                        var divH4Select = document.createElement('div');
+                        divH4Select.innerHTML = `<h4>Size</h4>
+                        <select id="size${element.id}">
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                        </select>`;
+
+                        var divInputCart = document.createElement('div'); //6
+                        divInputCart.classList.add('input-cart');
+                        divInputCart.appendChild(divH4Ip);
+                        divInputCart.appendChild(divH4Select);
+
+                        var btnDH = document.createElement('button'); //7
+                        btnDH.classList.add('btn');
+                        btnDH.setAttribute('onclick', `addcart('${element.id}')`);
+                        btnDH.innerHTML = ` <i class="fa-solid fa-shopping-cart"></i>`;
+
+                        var divBox = document.createElement('div');
+                        divBox.classList.add('box');
+                        divBox.appendChild(divR1);
+                        divBox.appendChild(h3Name);
+                        divBox.appendChild(divPrice);
+                        divBox.appendChild(divShoeIn4);
+                        divBox.appendChild(divRate);
+                        divBox.appendChild(divInputCart);
+                        divBox.appendChild(btnDH);
+
+                        var showcontent = document.getElementById('vans');
+                        // showcontent.appendChild(divBox);
+                        if (showcontent) {
+                            showcontent.appendChild(divBox); // Thêm dòng dữ liệu vào tbody nếu tồn tại
+                        } else {
+                            console.error('Không tìm thấy phần tử tbody trong DOM.');
+                        }
+                        console.log(element);
+                    });
+                });
+            function addcart(idProduct) {
+                var item = {};
+                item.id = idProduct;
+                item.name = document.getElementById(`name${idProduct}`).innerHTML;
+                var price = document.getElementById(`price${idProduct}`).innerHTML;
+                var priceT = price.slice(0, price.length - 12);
+                item.price = parseFloat(priceT.replace(/,/g, ''));
+                item.soluong = document.getElementById(`soluong${idProduct}`).value;
+                item.size = document.getElementById(`size${idProduct}`).value;
+                item.photo = document.getElementById(`img${idProduct}`).src;
+
+                if (item.soluong === '0') {
+                    alert('Vui long nhap so luong!!!');
+                } else {
+                    if (typeof localStorage[idProduct] === 'undefined') {
+                        var json = JSON.stringify(item);
+                        localStorage.setItem(idProduct, json);
+                    } else {
+                        if (item.soluong > 50) {
+                            alert('Vượt quá số lượng sản phẩm cho phép!!! Số lượng <= 50');
+                        } else {
+                            var data = JSON.parse(localStorage.getItem(idProduct));
+                            // var temp = window.localStorage.getItem(idProduct);
+                            number = parseInt(document.getElementById(`soluong${idProduct}`).value);
+                            current = parseInt(data.soluong);
+                            data.soluong = number + current;
+                            var json = JSON.stringify(data);
+                            localStorage.setItem(idProduct, json);
+                        }
+                    }
+                }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./asset/js/home.js"></script>
+        <script src="./asset/js/product.js"></script>
+        <script async src="./asset/js/funct.js"></script>
+        <!-- <script src="asset/js/shoppingcart.js"></script> -->
+        <!-- <script src="https://kit.fontawesome.com/78e61fa28b.js" crossorigin="anonymous"></script> -->
+    </body>
+</html>

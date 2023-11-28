@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng Nhập</title>
+        <link rel="icon" type="image/x-icon" href="asset/images/SKY_logo.png">
+        <link rel="stylesheet" href="asset/css/login.css">
+        <link rel="stylesheet" href="asset/css/base.css">
+        <!-- <link rel="stylesheet" href="asset/css/home.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    </head>
+    <body>
+        <header>
+            <!-- _____Logo_____ -->
+            <div class="logo" id="logo">
+                <a href="home.html">
+                    <img src="asset/images/SKY_logo.png" alt="LogoShop" width="80px">
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <a href="home.html">
+                    <span class="icon-close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <form
+                    action="home.html"
+                    method=""
+                    enctype=""
+                    onsubmit="return login();"
+                >
+                    <h1>Đăng Nhập</h1>
+                    <div class="action-login">
+                        <div class="input-box">
+                            <input
+                                id="textbox_account"
+                                type="text"
+                                placeholder="Nhập tài khoản hoặc email"
+                                minlength="5"
+                                required
+                            >
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <input
+                                id="textbox_password"
+                                type="password"
+                                placeholder="Nhập mật khẩu"
+                                minlength="8"
+                                required
+                            >
+                            <i id="icon_password" class="fa fa-eye" onclick="show_hidden_password()"></i>
+                        </div>
+                        <div class="remember-forget">
+                            <div>
+                                <input type="checkbox">
+                                Nhớ mật khẩu
+                            </div>
+                            <a href="#">Quên mật khẩu?</a>
+                        </div>
+                        <button class="btn" type="submit">Xác Nhận</button>
+                        <div class="register-link">
+                            <p>
+                                Bạn chưa có tài khoản?
+                                <a href="register.html">Đăng ký</a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- <script src="./asset/js/funct.js"></script> -->
+        <script src="./asset/js/login.js"></script>
+    </body>
+</html>

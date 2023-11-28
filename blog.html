@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Material CND-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+        <!--Style Sheet-->
+        <link rel="icon" type="image/x-icon" href="asset/images/SKY_logo.png" />
+        <title>Tin Tức</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="asset/css/product.css" />
+        <link rel="stylesheet" href="asset/css/home.css" />
+        <link rel="stylesheet" href="asset/css/base.css" />
+        <link rel="stylesheet" href="asset/css/blog.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <!-- _____Logo_____ -->
+            <div class="row header">
+                <div class="col-lg-1 logo" id="logo">
+                    <a href="home.html">
+                        <img src="asset/images/SKY_logo.png" alt="LogoShop" width="80px" />
+                    </a>
+                </div>
+                <div class="col-lg-7 navbar">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid sidebar">
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                                    <li class="nav-item item">
+                                        <a class="nav-link active" aria-current="page" href="home.html">Trang Chủ</a>
+                                    </li>
+                                    <li class="nav-item item">
+                                        <a class="nav-link" href="product.html">Sản Phẩm</a>
+                                    </li>
+                                    <li class="nav-item item">
+                                        <a class="nav-link" href="contact.html">Liên Hệ</a>
+                                    </li>
+                                    <li class="nav-item item">
+                                        <a class="nav-link" href="blog.html">Tin Tức</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- <nav>
+                            <div class="sidebar">
+                                <ul class="menu">
+                                    <li class="item">
+                                        <a href="home.html">
+                                            <p>Trang Chủ</p>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="product.html">
+                                            <p>Sản Phẩm</p>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="contact.html">
+                                            <p>Liên Hệ</p>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="blog.html">
+                                            <p>Tin Tức</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav> -->
+                </div>
+                <div class="col-lg-4">
+                    <form action="" method="get" onsubmit="return checkKeyPress(this);">
+                        <div class="action">
+                            <div class="item search">
+                                <div class="item search-btn">
+                                    <i class="fa-solid fa-search" onclick="sendSearchData();"></i>
+                                </div>
+                                <input
+                                    class="search-input"
+                                    type="text"
+                                    placeholder="Tìm kiếm ..."
+                                    onkeypress="checkKeyPress(event)"
+                                />
+                            </div>
+                            <div class="user-info">
+                                <button
+                                    class="navbar-toggler"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarTogglerDemo02"
+                                    aria-controls="navbarTogglerDemo02"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation"
+                                >
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                                <div class="item user">
+                                    <a href="login.html">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                </div>
+                                <div class="item user">
+                                    <a href="shoppingcart.html">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </div>
+                                <!-- <div class="item user">
+                                        <a href="login.html">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                    </div> -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- ===========blog============ -->
+        <section id="blog">
+            <div class="blog-heading">
+                <span>Sky Store</span>
+                <h3>Blog</h3>
+            </div>
+            <!-- blog-container -->
+            <div class="blog-container">
+                <!-- box 1 -->
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="asset/images/blog/blog1.webp" alt="Blog" />
+                    </div>
+                    <div class="blog-text">
+                        <span>15/06/2023</span>
+                        <a href="#" class="blog-title">
+                            Sự hợp tác với PUMA Star của Noah sẽ phát hành vào ngày 29 tháng 6 và trên toàn cầu vào ngày
+                            1 tháng 7
+                        </a>
+                        <p>
+                            Noah và PUMA không phải là cộng tác viên lâu năm, nhưng dường như họ đã sẵn sàng hợp tác
+                            khoảng cách. Để khởi động mùa hè, hai tổ chức đã chuẩn bị sẵn hai phong cách của Ngôi sao
+                            PUMA, một hình bóng quần vợt từ những năm 1980.
+                        </p>
+                        <a class="read-more" href="https://sneakernews.com/2023/06/15/noah-puma-star-release-date/"
+                            >Đọc Thêm</a
+                        >
+                    </div>
+                </div>
+                <!-- box 2 -->
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="asset/images/blog/blog2.webp" alt="Blog" />
+                    </div>
+                    <div class="blog-text">
+                        <span>16/10/2023</span>
+                        <a href="#" class="blog-title">New Balance 990v4 trở lại với bộ trang phục “Hải quân”</a>
+                        <p>
+                            Danh sách phong cách sống của New Balance về bản chất là vượt thời gian, khuếch đại các
+                            thiết kế kiên cố của nó trong suốt nhiều thập kỷ với thành phần chủ yếu là màu xám hoặc xanh
+                            nước biển. Gần đây, thương hiệu Made In Biểu ngữ Hoa Kỳ đã xây dựng phiên bản thứ tư của 990
+                            trong bóng tối mang tính biểu tượng của biểu ngữ Boston tông màu xanh.
+                        </p>
+                        <a
+                            class="read-more"
+                            href="https://sneakernews.com/2023/10/16/new-balance-990v4-made-in-usa-navy-silver-u990nv4/"
+                        >
+                            Đọc Thêm
+                        </a>
+                    </div>
+                </div>
+                <!-- box 3 -->
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="asset/images/blog/blog3.webp" alt="Blog" />
+                    </div>
+                    <div class="blog-text">
+                        <span>20/10/2023</span>
+                        <a href="#" class="blog-title">“Pink Flash” Thêm Điểm nhấn Sống động cho Nike Dunk Low</a>
+                        <p>
+                            Mặc dù cơn sốt Barbie đã tan biến kể từ buổi ra mắt lớn của bộ phim vào mùa hè, Nike vẫn
+                            cung cấp các phối màu phù hợp cho Dunk Low.
+                        </p>
+                        <a
+                            class="read-more"
+                            href="https://sneakernews.com/2023/10/20/nike-dunk-low-gs-pink-flash-white/"
+                            >Đọc Thêm</a
+                        >
+                    </div>
+                </div>
+                <!-- box 4 -->
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="asset/images/blog/blog4.webp" alt="Blog" />
+                    </div>
+                    <div class="blog-text">
+                        <span>02/10/2023</span>
+                        <a href="#" class="blog-title">Vans giúp Disney kỷ niệm 100 năm với bộ sưu tập hợp tác</a>
+                        <p>
+                            Kể từ năm 2013, Vans và Disney đã thường xuyên hợp tác cho nhiều loại giày dép và sản phẩm
+                            lấy cảm hứng từ số lượng nhân vật hư cấu huyền ảo của công ty. Với việc Disney kỷ niệm 100
+                            năm thành lập vào năm 2023, thương hiệu có trụ sở tại California này sẽ hợp tác với The
+                            Mouse một lần nữa để vinh danh cột mốc lịch sử.
+                        </p>
+                        <a
+                            class="read-more"
+                            href="https://sneakernews.com/2023/10/20/nike-dunk-low-gs-pink-flash-white/"
+                            >Đọc Thêm</a
+                        >
+                    </div>
+                </div>
+                <!-- box 5 -->
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="asset/images/blog/blog5.webp" alt="Blog" />
+                    </div>
+                    <div class="blog-text">
+                        <span>27/06/2023</span>
+                        <a href="#" class="blog-title">
+                            Stussy hợp tác với di sản của chúng tôi cho ba chiếc Converse Chuck 70s đã qua sử dụng
+                        </a>
+                        <p>
+                            Vào mùa thu năm 2021, Stussy và Our Legacy Work Shop đã tổ chức hoạt động đầu tiên của họ bộ
+                            sưu tập hợp tác. Kết hợp tính thẩm mỹ của cả hai nhãn, viên nang đặc trưng tất cả mọi thứ từ
+                            may đo chất lượng cao đến trang phục dạo phố cổ điển. Cả hai sẽ tiếp tục xây dựng dựa trên
+                            danh mục này trong những năm tiếp theo và năm 2023 cũng không phải là ngoại lệ. Nhưng mặc dù
+                            cùng nhau một lần nữa, Mùa hè này họ cũng sẽ tập trung nỗ lực vào giày dép.
+                        </p>
+                        <a
+                            class="read-more"
+                            href="https://sneakernews.com/2023/06/27/stussy-our-legacy-converse-chuck-70-release-date/"
+                        >
+                            Đọc Thêm
+                        </a>
+                    </div>
+                </div>
+                <!-- box 6 -->
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="asset/images/blog/blog6.webp" alt="Blog" />
+                    </div>
+                    <div class="blog-text">
+                        <span>17/10/2023</span>
+                        <a href="#" class="blog-title">
+                            Một bộ sưu tập “The Simpsons” x adidas khác sẽ ra mắt vào mùa thu năm 2023
+                        </a>
+                        <p>
+                            “The Simpsons” của Matt Groening đã vượt qua định dạng hai chiều trong 34 năm qua năm, trở
+                            thành một thiết chế văn hóa. Kể từ năm 2021, Homer và những người đồng hương của ông ở
+                            Springfield đã được adidas chuyển sang dạng giày thể thao, tiếp tục củng cố chúng như một
+                            phần của chủ nghĩa thời đại chính thống.
+                        </p>
+                        <a
+                            class="read-more"
+                            href="https://sneakernews.com/2023/10/17/simpsons-adidas-shoes-november-2023-release-dates/"
+                        >
+                            Đọc Thêm
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-info">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="asset/images/SKY_logo.png" alt="LogoShop" width="150px" />
+                        </a>
+                    </div>
+                    <div class="footer-member">
+                        <h3>Thành Viên</h3>
+                        <ul class="member">
+                            <li>
+                                <a href="#">Phạm Minh Sáng</a>
+                            </li>
+                            <li>
+                                <a href="#">Nguyễn Trung Tín</a>
+                            </li>
+                            <li>
+                                <a href="#">Nguyễn Thị Quỳnh Giao</a>
+                            </li>
+                            <li>
+                                <a href="#">Nguyễn Thị Mỹ Hạnh</a>
+                            </li>
+                            <li>
+                                <a href="#">Ông Thị Hoàng Quyên</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-policy">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <ul>
+                            <li class="paragraph">
+                                <a href="#">Hỗ trợ tư vấn khách hàng</a>
+                            </li>
+                            <li class="paragraph">
+                                <a href="#">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="paragraph">
+                                <a href="#">Chính sách đổi trả</a>
+                            </li>
+                            <li class="paragraph">
+                                <a href="#">Chính sách bảo mật</a>
+                            </li>
+                            <li class="paragraph">
+                                <a href="#">Chính sách thanh toán</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Liên hệ</h3>
+                        <div class="social">
+                            <div class="social_item">
+                                <a href="https://twitter.com" class="fa-brands fa-twitter"></a>
+                            </div>
+                            <div class="social_item">
+                                <a href="https://facebook.com" class="fa-brands fa-facebook"></a>
+                            </div>
+                            <div class="social_item">
+                                <a href="https://instagram.com" class="fa-brands fa-instagram"></a>
+                            </div>
+                            <div class="social_item">
+                                <a href="https://youtube.com" class="fa-brands fa-youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy 2023 Sky Store</p>
+                </div>
+                <a href="#" id="Top" class="">
+                    <div class="gotoTop">
+                        <i class="fa-solid fa-angles-up"></i>
+                    </div>
+                </a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="/asset/js/home.js"></script>
+        <script src="/asset/js/product.js"></script>
+        <script async src="./asset/js/funct.js"></script>
+        <script src="asset/js/readProduct.js"></script>
+    </body>
+</html>
